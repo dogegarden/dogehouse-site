@@ -1,8 +1,9 @@
 1. Clone repository using by running `$ git clone https://github.com/dogegarden/dogehouse-site/` in your terminal
 2. Navigate into the directory
 3. Install NodeJS and NPM
-4. Run `$ npm i` to install the required packages
-5. Execute the command `$ npm run dev` in your terminal
+4. Run `$ npm i` to install the required package's
+5. Setup .env file
+6. Execute the command `$ npm run dev` in your terminal
 
 The .env file explained
 
