@@ -1,0 +1,12 @@
+{
+  "short_name": "DogeGarden",
+  "name": "DogeGarden",
+  "icons": [{
+    "src": "https://avatars.githubusercontent.com/u/80551136?s=280&v=4",
+    "type": "image/png",
+    "sizes": "192x192"
+  }],
+  "start_url": "/?utm_source=homescreen",
+  "background_color": "#afceff",
+  "theme_color": "#afceff"
+}
