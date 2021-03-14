@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('./Components/Head', { title: 'Panel'}, { user }) %>
+    <%- include('./Components/Navbar', { user }) %>
+
+        <body>
+            <%- include('./Components/SecondTab', { user }) %>
+                <div class="container" style="margin-top: 43px;">
+                    <div class="row">
+                        <div class="col-sg">
+                            <div class="console status-card card">
+                                <div class="card-header card-header-text"><i class="fas fa-robot"></i> Service Status</div>
+                                <div class="card-body" style="border-radius: 0 0 0.25rem 0.25rem;">
+                                    <div class="service-text">
+                                        <p id="statusBodyText" class="card-body-text"><i class="status-on-circle fas fa-circle"></i> ONLINE</p>
+                                        <p class="card-body-text"><i class="fas fa-users"></i> Rooms <span id="accountsRunning" class="after-cbt">0</span><span class="after-cbt">/</span><span class="after-cbt">0</span></p>
+                                        <p class="card-body-text"><i class="fas fa-home"></i> Current<span class="after-cbt">none</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card" style="margin-top: 20px !important;">
+                                <div class="card-body" style="padding: 0.75rem;">
+                                    <div class="container mid">
+                                        <button id="startBtn" type="button" class="btn btn-outline-light controls" disabled>Start</button>
+                                        <button id="restartBtn" type="button" class="btn btn-outline-light controls" disabled>Restart</button>
+                                        <button id="stopBtn" type="button" class="btn btn-danger controls" disabled> Stop</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl">
+                            <div class="console card" style="min-height: 30rem; max-height: 30rem;">
+                                <div id="console-window" class="card-body" style="background-color: rgb(19, 26, 32); font-family: 'Encode Sans', sans-serif;">
+                                    <div id="console-window-inner"><img style="	margin-left: auto;
+                            margin-right: auto;
+                            display: block;" id="spinner" src="../public/spin.svg"></div>
+                                </div>
+                                <div class="console-input">
+                                    <p class="console-input-dollar">$</p>
+                                    <input id="console-input" type="text" placeholder="Type a message..." aria-label="Console command input." style="width: 100%;" class="console-input console-area input">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <input type="text" id="getSubUser" style='display: none' value='<%=user.db.sub_user %>'>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/3.1.0/socket.io.js"></script>
+                <script src="../public/js/socket.js" defer></script>
+
+        </body>
+
+</html>

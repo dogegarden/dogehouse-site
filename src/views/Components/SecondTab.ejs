@@ -1,0 +1,16 @@
+<div class="nav-under secondnav">
+    <div class="secondnav-items container">
+        <a class="morenav" href="/panel">Console</a>
+        <a class="morenav" href="/panel/rooms">Rooms</a>
+        <a class="morenav" href="/panel/settings">Settings</a>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script>
+    const pathname = window.location.pathname;
+    if (pathname.match('/panel/account/.*')) {
+        $(`a[href="/panel/accounts"]`).addClass('active');
+    } else {
+        $(`a[href="${pathname}"]`).addClass('active');
+    }
+</script>

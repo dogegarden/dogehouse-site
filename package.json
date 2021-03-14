@@ -1,0 +1,56 @@
+{
+    "name": "dogehotel",
+    "version": "0.0.1",
+    "description": "An open source website for managing chat bots, rooms and more on DogeHouse.tv.",
+    "main": "index.js",
+    "scripts": {
+        "dev": "nodemon index.js",
+        "start": "node index.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/dogegarden/dogehouse-site.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/dogegarden/dogehouse-site/issues"
+    },
+    "homepage": "https://github.com/dogegarden/dogehouse-site",
+    "dependencies": {
+        "axios": "^0.21.1",
+        "chalk": "^4.1.0",
+        "connect-mongo": "^3.2.0",
+        "cookie-parser": "^1.4.5",
+        "cors": "^2.8.5",
+        "dateformat": "^4.5.0",
+        "discord.js": "^12.5.1",
+        "dotenv": "^8.2.0",
+        "ejs": "^3.1.5",
+        "events": "^3.2.0",
+        "express": "^4.17.1",
+        "express-session": "^1.17.1",
+        "express-validator": "^6.9.2",
+        "fs": "0.0.1-security",
+        "handy-redis": "^2.2.1",
+        "hashmap": "^2.4.0",
+        "helmet": "^4.4.1",
+        "mineflayer": "^2.41.0",
+        "moment": "^2.29.1",
+        "monk": "^7.3.2",
+        "morgan": "^1.10.0",
+        "nanoid": "^3.1.20",
+        "node-cleanup": "^2.1.2",
+        "nodemon": "^2.0.7",
+        "passport": "^0.4.1",
+        "passport-discord": "^0.1.4",
+        "path": "^0.12.7",
+        "readline": "^1.3.0",
+        "redis": "^3.0.2",
+        "socket.io": "^3.1.0",
+        "socket.io-client": "^3.1.0",
+        "socks": "^2.5.1",
+        "util": "^0.12.3"
+    },
+    "devDependencies": {}
+}

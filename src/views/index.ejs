@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('./Components/Head', { title: 'Home'}) %>
+<%- include('./Components/Navbar', { user }) %>
+<body>
+    <div class="container title-text">
+        <% if (user) { %> 
+        <h1>DogeHouse.xyz</h1>
+        <p>Welcome back, <%= user.username %>.</p><br>
+        <p>You can <a href="/panel">click here</a> to visit the panel.</p>
+        <% } else { %>
+            <h1>DogeHouse.xyz</h1>
+            <p><i>Welcome to DogeHotel/DogeGarden<br><br>need slogon.</i></p><br>
+        <% } %>
+    </div>
+</body>
+
+</html>

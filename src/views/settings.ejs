@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('./Components/Head', { title: 'Dispatcher | Settings'}) %>
+<%- include('./Components/Navbar', { user }) %>
+<body>
+    <%- include('./Components/SecondTab', { user }) %>
+    <div class="container" style="margin-top: 43px;">
+        <div class="container" style=" width: 1400px; margin-top: 43px;">
+            <% if (error) { %>
+              <div class="alert alert-danger" role="alert">
+                  <%= message %>
+                </div>
+          <% } %>
+      
+          <% if (success) { %>
+              <div class="alert alert-success" role="alert">
+                Your settings have been saved!
+                </div>
+          <% } %>
+          <div class="alert alert-warning">
+            <i class="fas fa-exclamation-circle"></i> Follow <b><a href="#" style="color: #533f03d8 !important;">these</a></b> simple steps to get your DogeHouse token
+          </div>
+        <div class="row">
+            <div class="col col-xl">
+                <div class="card">
+                    <div class="card-header">User Options</div>
+                    <div class="card-body">
+                        <form id="check" action="/api/settings/save" method="POST" class="needs-validation" novalidate>
+                          <div class="form-row">
+                            <div class="contained-container" style="min-width: 1000px;">
+                            <div class="col-md-4 mb-3">
+                              <label for="message">DogeHouse Token</label>
+                              <input type="text" class="form-control hidden" style="background-color: rgba(31.008,40.8,50.592) !important;" name="token" id="token" value="<%= db.dogehouse_token %>" required></input>
+                              <div class="invalid-feedback">
+                                  Something does not look right..
+                              </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                              <label for="message">DogeHouse Refresh Token</label>
+                              <input type="text" class="form-control hidden" style="background-color: rgba(31.008,40.8,50.592) !important;" name="refresh_token" id="refresh_token" value="<%= db.dogehouse_refresh_token %>" required></input>
+                              <div class="invalid-feedback">
+                                  Something does not look right..
+                              </div>
+                            </div>
+                          
+                            <input type="text" style="display: none;" id="id" value="<%= db.user_id %>" name="id">
+                            <div class="col">
+                              <button type="submit" class="btn btn-outline-light controls">Save</button>
+                          </div>
+                          </div></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        (function() {
+          'use strict';
+          window.addEventListener('load', function() {
+            var forms = document.getElementsByClassName('needs-validation');
+            var validation = Array.prototype.filter.call(forms, function(form) {
+              form.addEventListener('submit', function(event) {
+                if (form.checkValidity() === false) {
+                  event.preventDefault();
+                  event.stopPropagation();
+                }
+                form.classList.add('was-validated');
+              }, false);
+            });
+          }, false);
+        })();
+        </script>
+</body>
+</html>

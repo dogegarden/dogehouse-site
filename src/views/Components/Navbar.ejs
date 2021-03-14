@@ -1,0 +1,28 @@
+
+    <link rel="stylesheet" href="/public/css/fontawesome-min.css" />
+
+    <script src="https://kit.fontawesome.com/4c42749b38.js" crossorigin="anonymous"></script>
+
+    <nav class="navbar navbar-dark">
+        <div class="container">
+            <a class="col navbar-brand mr-0 p-0 logo-text" href="/">
+                DogeHouse.xyz
+            </a>
+            <div id="nav_links" class="col-7 d-none d-block" style="text-align: right;">
+                <% if (user) { %>
+                    <a type="button" class="py-3 btn nav-item-new" href="/oauth/logout"><i class="fas fa-sign-out-alt"></i></a> 
+                <% } else { %>
+                    <a href="/oauth/login"><button style="margin-top: 10px; margin-bottom: 10px;"class="btn">Login</button></a>
+                <% } %>
+            </div>
+        </div>
+    </nav>
+
+    <style>
+        .disc-btn {
+            background: #7289da !important;
+            font-size: 15px !important;
+            font-weight: 400;
+            padding: 6px 15px !important;
+        }
+    </style>
