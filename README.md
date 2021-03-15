@@ -23,7 +23,7 @@
 ## Branches
 
 - staging -> pr to this branch, here we will review code and contribulate
-- prod -> don't touch, this is what's running in the production environment
+- master -> don't touch, this is what's running in the production environment
 
 ## Installation
 
