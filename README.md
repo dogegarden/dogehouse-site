@@ -62,3 +62,6 @@ DOGEHOUSE_WSS=wss://api.dogehouse.tv/socket - socket url for main dogehouse serv
 REDIS_HOST=REDDIS HOST - setup reddis with host and pass
 REDIS_PASS=REDDIS PASS - setup reddis with host and pass
 ```
+
+## Credits
+Thank you to Abalon#2525/https://github.com/alon-abadi for the awesome logo!
