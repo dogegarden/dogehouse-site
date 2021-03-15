@@ -1,3 +1,32 @@
+<p align="center">
+  <img src="https://cdn.discordapp.com/attachments/820450983892222022/820961073980899328/dogegarden-bottom-cropped.png" alt="DogeGarden logo" />
+</p>
+<p align="center">
+  <strong>An open source website for managing chat bots, rooms and more.</strong>
+</p>
+<p align="center">
+  <a href="https://discord.gg/Nu6KVjJYj6">
+    <img src="https://img.shields.io/discord/820442045264691201?style=for-the-badge" alt="discord - users online" />
+  </a>
+</p>
+
+<h3 align="center">  
+  <a href="CONTRIBUTING.md">Contribute (soon)</a>
+  <span> · </span>
+  <a href="https://discord.gg/Nu6KVjJYj6">Discord</a>
+  <span> · </span>
+  <a href="https://docs.dogehouse.xyz">Documentation (soon)</a>
+</h3>
+
+---
+
+## Branches
+
+- staging -> pr to this branch, here we will review code and contribulate
+- prod -> don't touch, this is what's running in the production environment
+
+## Installation
+
 1. Clone repository using by running `$ git clone https://github.com/dogegarden/dogehouse-site/` in your terminal
 2. Navigate into the directory
 3. Install NodeJS and NPM
@@ -5,8 +34,7 @@
 5. Setup .env file
 6. Execute the command `$ npm run dev` in your terminal
 
-The .env file explained
-
+### Default .env
 ```
 PORT=3071
 
