@@ -11,11 +11,11 @@
 </p>
 
 <h3 align="center">  
-  <a href="CONTRIBUTING.md">Contribute (soon)</a>
+  <a href="CONTRIBUTING.md">Contribute</a>
   <span> · </span>
   <a href="https://discord.gg/Nu6KVjJYj6">Discord</a>
   <span> · </span>
-  <a href="https://docs.dogehouse.xyz">Documentation (soon)</a>
+  <a href="https://wiki.dogehouse.xyz">Documentation</a>
 </h3>
 
 ---
@@ -30,7 +30,7 @@
 1. Clone repository using by running `$ git clone https://github.com/dogegarden/dogehouse-site/` in your terminal
 2. Navigate into the directory
 3. Install NodeJS and NPM
-4. Run `$ npm i` to install the required package's
+4. Run `$ npm i` to install the required packages
 5. Setup .env file
 6. Execute the command `$ npm run dev` in your terminal
 
@@ -62,3 +62,6 @@ DOGEHOUSE_WSS=wss://api.dogehouse.tv/socket - socket url for main dogehouse serv
 REDIS_HOST=REDDIS HOST - setup reddis with host and pass
 REDIS_PASS=REDDIS PASS - setup reddis with host and pass
 ```
+
+## Credits
+Thank you to Abalon#2525/https://github.com/alon-abadi for the awesome logo!
