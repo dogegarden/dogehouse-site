@@ -11,11 +11,11 @@
 </p>
 
 <h3 align="center">  
-  <a href="CONTRIBUTING.md">Contribute (soon)</a>
+  <a href="CONTRIBUTING.md">Contribute</a>
   <span> · </span>
   <a href="https://discord.gg/Nu6KVjJYj6">Discord</a>
   <span> · </span>
-  <a href="https://docs.dogehouse.xyz">Documentation (soon)</a>
+  <a href="https://wiki.dogehouse.xyz">Documentation</a>
 </h3>
 
 ---
